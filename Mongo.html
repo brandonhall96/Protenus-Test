@@ -1,0 +1,11 @@
+#1
+Answer:
+2
+
+#2
+Answer:
+db.fruit.find({"stock.count": {$gt: 15}})
+
+#3
+Answer:
+db.fruit.find({ “stock.store”: “Chicago”, “stock.price”: { $gt: 2.50 } }).count()
